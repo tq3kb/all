@@ -24,17 +24,17 @@ SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1854384004").split()))
 OWNER_ID = list(
     map(int, getenv("OWNER_ID", "6144837721").split())
 )  # Input type must be interger
-SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "30"))
+SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "60"))
 
 #•••••••••••••••••••••••• Mongodb Url Stuff & Loggroupid •••••••••••
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "")) 
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "1001521811235")) 
 
 MONGODB_URL = getenv("MONGODB_URL", "mongodb+srv://veez:mega@cluster0.heqnd.mongodb.net/veez?retryWrites=true&w=majority")
 #________________________ Updates  & Music bot name________________
 NETWORK = getenv("NETWORK", "xl444")
 GROUP = getenv("GROUP", "")
 BOT_NAME = getenv("myozkmtimbot", "Music")
-BANNED_USERS = filters.user()
+BANNED_USERS = filters.user("tq_kb")
 
 #************************* Image Stuff  ****************************
 
